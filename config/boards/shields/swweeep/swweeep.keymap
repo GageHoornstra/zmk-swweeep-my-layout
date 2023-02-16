@@ -65,7 +65,7 @@
             bindings = <
     &kp Q        &kp W        &kp E       &kp R         &kp T                                       &kp Y         &kp U        &kp I         &kp O       &kp P
     &hm LCTL A   &hm LGUI S   &hm LALT D  &hs LSHIFT F  &kp G                                       &kp H         &hs RSHIFT J &hm RALT K    &hm RGUI L  &kp SEMI
-    &kp Z        &kp X        &kp C       &kp V         &kp B                                       &kp N         &kp M        &kp COMMA     &kp DOT     &kp FSLH
+    &kp Z        &kp X        &kp C       &kp V         &kp B                                       &kp N         &kp M        &kp COMMA     &kp DOT     &mt FUNC FSLH
                                           &mt LSHIFT    &mt NAVNUM  &kp SPACE  &mt SYM BSPC   &kp RETURN &mt LCTL
             >;
         };
