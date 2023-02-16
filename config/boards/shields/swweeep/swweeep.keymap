@@ -96,8 +96,8 @@
             label = "Function";
 
             bindings = <
-    &kp K_PP       &kp F7       &kp F8        &kp F9      &kp F10                                   &bootloader  &bt BT_CLR     &out OUT_USB   &trans       &trans  
-    &kp K_NEXT     &kp F4       &kp F5        &kp F6      &kp F11                                   &trans       &bt BT_PRV)   &out OUT_BLE   &bt BT_NXT    &trans 
+    &kp K_PP       &kp F7       &kp F8        &kp F9      &kp F10                                   &bootloader  &bt BT_CLR    &out OUT_USB   &trans       &trans  
+    &kp K_NEXT     &kp F4       &kp F5        &kp F6      &kp F11                                   &trans       &bt BT_PRV    &out OUT_BLE   &bt BT_NXT    &trans 
     &kp K_PREV     &kp F1       &kp F2        &kp F3      &kp F12                                   &bt BT_SEL 3 &bt BT_SEL 2  &bt BT_SEL 1   &bt BT_SEL 0  &trans
                                           &mt LSHIFT    &mt NAVNUM  &kp SPACE        &mt SYM BSPC   &kp RETURN   &mt LCTL
             >;
