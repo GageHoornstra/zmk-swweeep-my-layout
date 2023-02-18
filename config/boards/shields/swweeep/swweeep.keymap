@@ -15,20 +15,11 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_undo {
+        combo_caps {
             timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&kp LC(Z)>;
-        };
-        combo_q {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp Q>;
-        };
-        combo_semicolon {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp SEMI>;
+            key-positions = <13 20>;
+            layers = <0>
+            bindings = <&kp CAPS>;
         };
     };
 };
@@ -65,8 +56,8 @@
             bindings = <
     &kp Q        &kp W        &kp E       &kp R         &kp T                                       &kp Y         &kp U        &kp I         &kp O       &kp P
     &hm LCTL A   &hm LGUI S   &hm LALT D  &hs LSHIFT F  &kp G                                       &kp H         &hs RSHIFT J &hm RALT K    &hm RGUI L  &kp SEMI
-    &kp Z        &kp X        &kp C       &kp V         &kp B                                       &kp N         &kp M        &kp COMMA     &kp DOT     &mt FUNC FSLH
-                                          &kp LSHIFT    &kp NAVNUM  &kp SPACE  &mt SYM BSPC   &kp RETURN &kp LCTL
+    &kp Z        &kp X        &kp C       &kp V         &kp B                                       &kp N         &kp M        &kp COMMA     &kp DOT     &lt FUNC FSLH
+                                          &kp LSHIFT    &mo NAVNUM  &kp SPACE  &lt SYM RETURN  &kp BSPC &kp LCTL
             >;
         };
 
@@ -77,7 +68,7 @@
     &kp TAB    &kp N7    &kp N8    &kp N9     &kp LBKT                                      &kp RBKT     &kp UNDERSCORE &kp UP        &kp TILDE      &kp PIPE
     &kp N0     &kp N4    &kp N5    &kp N6     &kp LPAR                                      &kp RPAR     &kp LEFT       &kp DOWN      &kp RIGHT      &kp ASTRK
     &kp DOT    &kp N1    &kp N2    &kp N3     &kp LBRC                                      &kp RBRC     &kp PLUS       &kp MINUS     &kp EQUAL      &kp FSLH
-                                          &kp LSHIFT    &kp NAVNUM  &kp SPACE  &mt SYM BSPC   &kp RETURN &kp LCTL
+                                          &kp LSHIFT    &mo NAVNUM  &kp SPACE  &lt SYM RETURN  &kp BSPC &kp LCTL
             >;
         };
 
@@ -88,7 +79,7 @@
     &kp ESC     &kp AMPS       &kp ASTRK        &trans         &kp CAPS                                  &trans        &trans            &trans        &trans      &trans
     &kp MINUS   &kp DLLR       &kp PRCNT        &kp LPAR       &trans                                    &trans        &kp DQT          &kp SQT       &trans    &trans
     &kp LGUI    &kp EXCL       &kp AT           &kp HASH       &kp BSLH                                  &trans        &trans            &trans        &trans      &kp BSLH
-                                          &kp LSHIFT    &kp NAVNUM  &kp SPACE  &mt SYM BSPC   &kp RETURN &kp LCTL
+                                          &kp LSHIFT    &mo NAVNUM  &kp SPACE  &lt SYM RETURN  &kp BSPC &kp LCTL
             >;
         };
 
@@ -99,7 +90,7 @@
     &kp C_PAUSE      &kp F7       &kp F8        &kp F9      &kp F10                                   &bootloader  &bt BT_CLR    &out OUT_USB   &trans        &trans  
     &kp K_NEXT       &kp F4       &kp F5        &kp F6      &kp F11                                   &trans       &bt BT_PRV    &out OUT_BLE   &bt BT_NXT    &trans 
     &kp K_PREV       &kp F1       &kp F2        &kp F3      &kp F12                                   &bt BT_SEL 3 &bt BT_SEL 2  &bt BT_SEL 1   &bt BT_SEL 0  &trans
-                                          &kp LSHIFT    &kp NAVNUM  &kp SPACE  &mt SYM BSPC   &kp RETURN &kp LCTL
+                                          &kp LSHIFT    &mo NAVNUM  &kp SPACE  &lt SYM RETURN  &kp BSPC &kp LCTL
             >;
         };
     };
