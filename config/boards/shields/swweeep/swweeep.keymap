@@ -32,14 +32,14 @@
             label = "STICKY_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp N1>, <&sk N2>;
+            bindings = <&kp>, <&sk>;
         };
         td: tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp N1>, <&kp N2>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
