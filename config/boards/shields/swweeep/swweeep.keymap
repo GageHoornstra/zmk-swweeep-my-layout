@@ -39,7 +39,7 @@
             label = "STDC_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp D>, <&sk CTRL>;
+            bindings = <&kp D>, <&sk LCTRL>;
         };
         st_GA: stga_tap_dance {
             compatible = "zmk,behavior-tap-dance";
