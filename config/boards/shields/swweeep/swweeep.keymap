@@ -16,7 +16,7 @@
     combos {
         compatible = "zmk,combos";
         combo_caps {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <13 20>;
             layers = <0>;
             bindings = <&kp CAPS>;
@@ -27,49 +27,49 @@
 / {
 
     behaviors {
-        st_FS: sticky_tap_dance {
+        st_FS: stfs_tap_dance {
             compatible = "zmk,behavior-tap-dance";
-            label = "STICKY_TAP_DANCE";
+            label = "STFS_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F>, <&sk LSHIFT>;
         };
-        st_DC: sticky_tap_dance {
+        st_DC: stdc_tap_dance {
             compatible = "zmk,behavior-tap-dance";
-            label = "STICKY_TAP_DANCE";
+            label = "STDC_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp D>, <&sk CTRL>;
         };
-        st_GA: sticky_tap_dance {
+        st_GA: stga_tap_dance {
             compatible = "zmk,behavior-tap-dance";
-            label = "_TAP_DANCE";
+            label = "STGA_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp G>, <&sk LALT>;
         };
-        td_X: sticky_tap_dance {
+        td_X: tdx_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "TDX_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp X>, <&kp K_CUT>;
         };
-        td_Z: sticky_tap_dance {
+        td_Z: tdz_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "TDZ_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp Z>, <&kp K_UNDO>;
         };
-        td_C: sticky_tap_dance {
+        td_C: tdc_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "TDC_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp C>, <&kp K_COPY>;
         };
-        td_V: sticky_tap_dance {
+        td_V: tdv_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "TDV_TAP_DANCE";
             #binding-cells = <0>;
@@ -86,8 +86,8 @@
 
             bindings = <
     &kp Q        &kp W        &kp E       &kp R         &kp T                                       &kp Y         &kp U        &kp I         &kp O       &kp P
-    &td_ST       &td_SG       &st_DC      &st_FS        &st_GA                                 &kp H         &kp J        &kp K         &kp L       &kp SEMI
-    &td Z K_UNDO   &td X K_CUT   &td C K_COPY   &td V K_PASTE  &kp B                                &kp N         &kp M        &kp COMMA     &kp DOT     &lt FUNC FSLH
+    &kp A        &kp S        &st_DC      &st_FS        &st_GA                                 &kp H         &kp J        &kp K         &kp L       &kp SEMI
+    &td_Z        &td_X        &td_C       &td_V         &kp B                                &kp N         &kp M        &kp COMMA     &kp DOT     &lt FUNC FSLH
                                           &kp LSHIFT    &mo NAVNUM  &kp SPACE  &lt SYM RETURN  &kp BSPC &kp LCTL
             >;
         };
