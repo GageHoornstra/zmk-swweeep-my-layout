@@ -31,7 +31,7 @@
             timeout-ms = <50>;
             key-positions = <12 17>;
             layers = <0>;
-            bindings = <&kp LCTRLD>;
+            bindings = <&kp LCTRL>;
         };
         combo_alt {
             timeout-ms = <50>;
