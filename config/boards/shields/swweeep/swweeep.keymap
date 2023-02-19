@@ -22,25 +22,25 @@
             bindings = <&kp CAPS>;
         };
         combo_shift {
-            timeout-ms = <100>;
+            timeout-ms = <50>;
             key-positions = <13 16>;
             layers = <0>;
             bindings = <&kp LSHIFT>;
         };
         combo_ctrl {
-            timeout-ms = <100>;
+            timeout-ms = <50>;
             key-positions = <12 17>;
             layers = <0>;
             bindings = <&kp LCTRL;
         };
         combo_alt {
-            timeout-ms = <100>;
+            timeout-ms = <50>;
             key-positions = <14 15>;
             layers = <0>;
             bindings = <&kp LALT;
         };
         combo_gui {
-            timeout-ms = <100>;
+            timeout-ms = <50>;
             key-positions = <10 19>;
             layers = <0>;
             bindings = <&kp LGUI;
