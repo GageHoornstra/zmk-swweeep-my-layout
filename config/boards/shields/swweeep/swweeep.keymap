@@ -27,23 +27,19 @@
 / {
 
     behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
+        std: sticky_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "STICKY_TAP_DANCE";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp N1>, <&sk N2>;
         };
-        hs: homerow_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_SHIFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            quick_tap_ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+        td: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>;
         };
     };
 
@@ -55,8 +51,8 @@
 
             bindings = <
     &kp Q        &kp W        &kp E       &kp R         &kp T                                       &kp Y         &kp U        &kp I         &kp O       &kp P
-    &hm LCTL A   &hm LGUI S   &hm LALT D  &hs LSHIFT F  &kp G                                       &kp H         &hs RSHIFT J &hm RALT K    &hm RGUI L  &kp SEMI
-    &kp Z        &kp X        &kp C       &kp V         &kp B                                       &kp N         &kp M        &kp COMMA     &kp DOT     &lt FUNC FSLH
+    &td S TAB    &td S LGUI   &std D LCTL &std F LSHIFT &std G LALT                                 &kp H         &kp J        &kp K         &kp L       &kp SEMI
+    &td Z K_UNDO   &td X K_CUT   &td C K_COPY   &td V K_PASTE  &kp B                                &kp N         &kp M        &kp COMMA     &kp DOT     &lt FUNC FSLH
                                           &kp LSHIFT    &mo NAVNUM  &kp SPACE  &lt SYM RETURN  &kp BSPC &kp LCTL
             >;
         };
