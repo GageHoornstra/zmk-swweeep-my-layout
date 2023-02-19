@@ -31,19 +31,19 @@
             timeout-ms = <50>;
             key-positions = <12 17>;
             layers = <0>;
-            bindings = <&kp LCTRL;
+            bindings = <&kp LCTRLD>;
         };
         combo_alt {
             timeout-ms = <50>;
             key-positions = <14 15>;
             layers = <0>;
-            bindings = <&kp LALT;
+            bindings = <&kp LALT>;
         };
         combo_gui {
             timeout-ms = <50>;
             key-positions = <10 19>;
             layers = <0>;
-            bindings = <&kp LGUI;
+            bindings = <&kp LGUI>;
         };
     };
 };
